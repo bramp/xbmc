@@ -38,8 +38,8 @@
       NSOpenGLPFAAccelerated,
       NSOpenGLPFADoubleBuffer,
       NSOpenGLPFAOpenGLProfile, NSOpenGLProfileVersion3_2Core,
-      //NSOpenGLPFAColorSize,     (NSOpenGLPixelFormatAttribute)32,
-      NSOpenGLPFAAlphaSize,     (NSOpenGLPixelFormatAttribute)8,
+      NSOpenGLPFAColorSize,     (NSOpenGLPixelFormatAttribute)32,
+      //NSOpenGLPFAAlphaSize,     (NSOpenGLPixelFormatAttribute)8,
       NSOpenGLPFADepthSize,     (NSOpenGLPixelFormatAttribute)24,
       (NSOpenGLPixelFormatAttribute)0
   };
