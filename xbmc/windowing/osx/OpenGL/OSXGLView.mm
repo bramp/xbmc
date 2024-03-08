@@ -34,12 +34,15 @@
 - (id)initWithFrame:(NSRect)frameRect
 {
   NSOpenGLPixelFormatAttribute wattrs[] = {
-      NSOpenGLPFANoRecovery,    NSOpenGLPFAAccelerated,
+      NSOpenGLPFANoRecovery,
+      NSOpenGLPFAAccelerated,
+      NSOpenGLPFADoubleBuffer,
       NSOpenGLPFAOpenGLProfile, NSOpenGLProfileVersion3_2Core,
-      NSOpenGLPFAColorSize,     (NSOpenGLPixelFormatAttribute)32,
+      //NSOpenGLPFAColorSize,     (NSOpenGLPixelFormatAttribute)32,
       NSOpenGLPFAAlphaSize,     (NSOpenGLPixelFormatAttribute)8,
       NSOpenGLPFADepthSize,     (NSOpenGLPixelFormatAttribute)24,
-      NSOpenGLPFADoubleBuffer,  (NSOpenGLPixelFormatAttribute)0};
+      (NSOpenGLPixelFormatAttribute)0
+  };
 
   self = [super initWithFrame:frameRect];
   if (self)
